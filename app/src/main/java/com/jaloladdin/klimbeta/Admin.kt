@@ -47,7 +47,7 @@ class Admin : AppCompatActivity() {
     private var humoOrdersSum = 0
 
     private var admin = 0
-//Its a comment for test update
+//Its a comment for test update ииванпгролдмгигштджекемитьбюсампиртольбдюжчвасмпритольбджаасапмриотльдб
 //Its a second comment for test update
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
