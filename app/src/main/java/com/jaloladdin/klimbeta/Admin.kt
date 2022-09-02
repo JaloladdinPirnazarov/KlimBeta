@@ -48,6 +48,7 @@ class Admin : AppCompatActivity() {
 
     private var admin = 0
 //Its a comment for test update
+//Its a second comment for test update
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
