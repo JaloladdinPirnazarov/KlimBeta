@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@android:drawable/editbox_background"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:id="@+id/imgRcWallet"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMakePayed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/payeer" />
+
+    <TextView
+        android:id="@+id/tvRcWalletName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgRcWallet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRcWalletCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvRcWalletName"
+        app:layout_constraintStart_toEndOf="@+id/imgRcWallet"
+        app:layout_constraintTop_toBottomOf="@+id/tvRcWalletName" />
+
+    <TextView
+        android:id="@+id/tvRcWalletPath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvRcWalletName"
+        app:layout_constraintStart_toStartOf="@+id/tvRcWalletName"
+        app:layout_constraintTop_toBottomOf="@+id/tvRcWalletCurrency" />
+
+    <TextView
+        android:id="@+id/tvRcSum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvRcWalletPath"
+        app:layout_constraintStart_toEndOf="@+id/imgRcWallet"
+        app:layout_constraintTop_toBottomOf="@+id/tvRcWalletPath" />
+
+    <TextView
+        android:id="@+id/tvRcCreatedAt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvRcSum"
+        app:layout_constraintStart_toEndOf="@+id/imgRcWallet"
+        app:layout_constraintTop_toBottomOf="@+id/tvRcSum" />
+
+    <TextView
+        android:id="@+id/tvRcComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvRcCreatedAt"
+        app:layout_constraintStart_toEndOf="@+id/imgRcWallet"
+        app:layout_constraintTop_toBottomOf="@+id/tvRcCreatedAt" />
+
+    <TextView
+        android:id="@+id/tvRcOrderState"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvRcCreatedAt"
+        app:layout_constraintStart_toStartOf="@+id/tvRcCreatedAt"
+        app:layout_constraintTop_toBottomOf="@+id/tvRcComment" />
+
+    <Button
+        android:id="@+id/btnMakePayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/payed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRcOrderState" />
+
+    <ImageView
+        android:id="@+id/btnCopy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMakePayed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnMakePayed"
+        app:srcCompat="@drawable/ic_content_copy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

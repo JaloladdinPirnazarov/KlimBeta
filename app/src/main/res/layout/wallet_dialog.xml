@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/withdrawal_dialog_background">
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/withdraw_money_to"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupWallets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCountinue"
+        app:layout_constraintStart_toStartOf="@+id/btnCancelWithdrawal"
+        app:layout_constraintTop_toBottomOf="@+id/textView59">
+
+        <RadioButton
+            android:id="@+id/radioPayeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payeer" />
+
+        <RadioButton
+            android:id="@+id/radioQiwi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qiwi" />
+
+        <RadioButton
+            android:id="@+id/radioUzcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uzcard" />
+
+        <RadioButton
+            android:id="@+id/radioHumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/humo" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCountinue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/continue_withdraval"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelWithdrawal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelWithdrawal"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelWithdrawal" />
+
+    <Button
+        android:id="@+id/btnCancelWithdrawal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCountinue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Вывести 1$"
+        android:textColor="@color/correct_answer_box_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCountinue"
+        app:layout_constraintStart_toStartOf="@+id/btnCancelWithdrawal"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupWallets" />
+
+    <TextView
+        android:id="@+id/tvPrompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/dollar_value"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCountinue"
+        app:layout_constraintStart_toStartOf="@+id/btnCancelWithdrawal"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/dont_have_enough_points"
+        android:textColor="@color/wrong_answer_box_color"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/btnCountinue"
+        app:layout_constraintStart_toStartOf="@+id/btnCancelWithdrawal"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrompt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
